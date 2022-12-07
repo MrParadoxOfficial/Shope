@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/cat_root_layout"
+
+        android:orientation="vertical"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image_catorgy_row_contian"
+            android:scaleType="fitXY"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@color/teal_200"/>
+        <TextView
+            android:id="@+id/Catogry_text_row_contian"
+            android:fontFamily="@font/changa_para"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contian"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

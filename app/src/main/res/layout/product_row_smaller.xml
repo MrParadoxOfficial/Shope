@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:id="@+id/image_product_row_contian_smaller"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/love_pbtn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:elevation="@dimen/cardview_compat_inset_shadow"
+                android:scaleType="fitXY"
+                />
+
+        </RelativeLayout>
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_weight="1"
+               android:id="@+id/Product_text_row_contian_smaller"
+               android:fontFamily="@font/changa_para"
+               android:gravity="center"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Contian"/>
+           <TextView
+
+               android:id="@+id/Product_point_row_contian_smaller"
+               android:fontFamily="@font/changa_para"
+               android:gravity="center"
+               android:textColor="#D10000"
+               android:textSize="12sp"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:text="20 P"/>
+       </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/Product_price_row_contian_smaller"
+                android:fontFamily="@font/changa_para"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="280 $"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/Buy_btn_get"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_to_cart"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

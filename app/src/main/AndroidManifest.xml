@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="shope.three3pro.shope_All">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Shope"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:usesCleartextTraffic">
+        <activity
+            android:name=".screen.Confrim_payment"
+            android:exported="true" />
+        <activity
+            android:name=".screen.Log_In"
+            android:exported="true" />
+        <activity
+            android:name=".screen.AddPaymentCode"
+            android:exported="true" />
+        <activity
+            android:name=".screen.cart_activity"
+            android:exported="true" />
+        <activity
+            android:name=".screen.Add_Product"
+            android:exported="true" />
+        <activity
+            android:name=".screen.cat_all_product"
+            android:exported="true" />
+        <activity
+            android:name=".screen.category_activity"
+            android:exported="true" />
+        <activity
+            android:name=".screen.home_main"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".screen.sign_up_activity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".screen.change_langauge"
+            android:exported="true" />
+        <activity
+            android:name=".screen.MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
